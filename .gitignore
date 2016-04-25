@@ -3,3 +3,4 @@ Lib
 Scripts
 hellowebapp
 src/db.sqlite3
+.idea

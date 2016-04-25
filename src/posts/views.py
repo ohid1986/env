@@ -15,8 +15,7 @@ def post_create(request):
         # message success
         messages.success(request, "Successfully Created")
         return HttpResponseRedirect(instance.get_absolute_url())
-    else:
-        messages.error(request, "Not Successfully Created")
+
         
 
 	# if request.method == "POST":
@@ -47,7 +46,7 @@ def post_list(request): #list items
         "title" : "List"
         
     }
-    return render(request, "base.html", context)
+    return render(request, "post_list.html", context)
     #    if request.user.is_authenticated():
 #        context = {
 #            "title": "My User List"
